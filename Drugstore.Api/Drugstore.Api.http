@@ -1,0 +1,6 @@
+@Drugstore.Api_HostAddress = http://localhost:5079
+
+GET {{Drugstore.Api_HostAddress}}/home/
+Accept: application/json
+
+###

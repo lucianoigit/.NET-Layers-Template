@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+    db:
+        image: postgres:16-alpine
+
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: dev
+            POSTGRES_DB: ERPdev
+        volumes:
+            - postgresdata:/var/lib/postgresql/data
+
+    adminer:
+        image: adminer:latest
+        restart: always
+        depends_on:
+            - db
+        environment:
+            ADMINER_DESIGN: galkaev
+        ports:
+            - 8080:8080
+
+volumes:
+    postgresdata:
