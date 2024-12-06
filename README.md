@@ -77,7 +77,7 @@ El proyecto sigue la arquitectura limpia con una estructura modular:
 
 ## Tecnologías Utilizadas
 
-- **.NET 7**: Framework principal.
+- **.NET 8**: Framework principal.
 - **Entity Framework Core**: Manejo de base de datos.
 - **FluentValidation**: Validación de modelos y comandos.
 - **Swagger**: Generación automática de documentación.
